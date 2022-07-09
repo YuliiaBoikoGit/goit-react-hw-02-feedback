@@ -12,30 +12,6 @@ export class App extends React.Component {
     bad: 0
   };
 
-  handleClickOnGoodBtn = () => {
-    this.setState(prevState => {
-      return {
-        good: prevState.good + 1,
-      };
-    });
-  };
-
-  handleClickOnNeutralBtn = () => {
-    this.setState(prevState => {
-      return {
-        neutral: prevState.neutral + 1,
-      };
-    });
-  };
-
-  handleClickOnBadBtn = () => {
-    this.setState(prevState => {
-      return {
-        bad: prevState.bad + 1,
-      };
-    });
-  };
-
   onLeaveFeedback = (event) => {
 		const name = event.target.name;
 		this.setState((prevState) => ({
